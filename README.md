@@ -201,15 +201,6 @@ AgentHub/
 15. **真实文件夹**：先在「设置 → 保存位置」选一个手机文件夹，再进 Windows 环境开终端——`ls/cat/node 文件.js` 操作的就是真实文件；终端里输入 `real off` 可随时切回虚拟磁盘
 16. **全局搜索**：对话页右上角放大镜，一次搜对话/智能体/模型/技能/文件，点结果直达
 17. **CORS 提示**：若某接口报"网络请求失败/跨域"，换用支持浏览器跨域的接口地址即可（多数主流服务商均支持）
-
-## 六、签名信息（重新打包用）
-
-- Keystore：`agenthub.keystore`
-- 别名：`agenthub` ｜ 密码：`agenthub123`
-- 重新构建：`cd android && gradle assembleRelease -PKEYSTORE_FILE=../agenthub.keystore -PKEYSTORE_PASSWORD=agenthub123 -PKEYSTORE_ALIAS=agenthub`
-
-> ⚠️ 正式上架请更换为自己的密钥；此密钥仅为方便你本地更新安装。
-
-## 七、隐私说明
+## 六、隐私说明
 
 所有配置（含 API 密钥）、对话记录、工作流、任务数据**仅存储于本机**，应用不含任何统计/上报代码，网络请求仅发往你手动配置的接口地址。
